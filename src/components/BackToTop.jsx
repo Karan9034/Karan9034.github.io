@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import $ from 'jquery';
 import '../libs/easing.js'
 
-class BackToTop extends React.Component {
-    componentDidMount(){
+const BackToTop = () => {
+    useEffect(() => {
         $('.back-to-top').click(function(){
             $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
             return false;
@@ -18,11 +18,9 @@ class BackToTop extends React.Component {
                 document.querySelector('.back-to-top').classList.add("fadeOut");
             }
         });
-    }
-
-    render(){
-        return <a href="#" className="back-to-top animated"><i className="fa fa-chevron-up"></i></a>;
-    }
+    })
+    
+    return <a href="#page-top" className="back-to-top animated"><i className="fa fa-chevron-up"></i></a>
 }
 
 export default BackToTop;

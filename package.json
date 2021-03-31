@@ -1,8 +1,8 @@
 {
-  "name": "portfolio_frank_izquierdo",
-  "version": "0.1.0",
+  "name": "portfolio_karanel",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://www.fdaviz.com/",
+  "homepage": "https://www.karanel.tech/",
   "dependencies": {
     "bootstrap": "^4.5.2",
     "gh-pages": "^2.2.0",
@@ -13,7 +13,6 @@
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-ga": "^3.1.2",
     "react-scripts": "3.0.1",
     "react-typed": "^1.2.0",
     "typed.js": "^2.0.11"

@@ -906,6 +906,11 @@ BUTTON
   border-radius: .3rem;
 }
 
+span.badge-warning{
+  font-size: 0.8rem;
+  width: 30%;
+  margin: 5px;
+}
 @media (min-width: 577px) {
   .counter-box {
     margin-bottom: 1.8rem;
@@ -972,6 +977,9 @@ BUTTON
 
   .box-comments .list-comments .comment-author {
     font-size: 1.5rem;
+  }
+  span.badge-warning{
+    font-size: 1rem;
   }
 }
 

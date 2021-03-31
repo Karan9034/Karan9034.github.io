@@ -6,15 +6,21 @@ class About extends React.Component{
         super();
         this.state = {
             skills:[
-                {id:"HTML5_skill", content: "HTML5",percentage: "80%", value: "80"},
-                {id:"CSS3_skill", content: "CSS3",percentage: "75%", value: "75"},
-                {id:"JavaScript_skill", content: "JavaScript",percentage: "90%", value: "90"},
-                {id:"Flask_skill", content: "Flask",percentage: "70%", value: "70"},
-                {id:"MERN_skill", content: "MERN",percentage: "80%", value: "80"},
-                {id:"Python_skill", content: "Python",percentage: "75%", value: "75"},
-                {id:"VanillaJS_skill", content: "VanillaJS",percentage: "85%", value: "85"},
-                {id:"ElectronJS_skill", content: "ElectronJS",percentage: "80%", value: "80"},
-                {id:"MySQL_skill", content: "MySQL",percentage: "85%", value: "85"}
+                {id:12, content: "Data Structures"},
+                {id:13, content: "Algorithms"},
+                {id:14, content: "C/C++"},
+                {id:0, content: "HTML5"},
+                {id:1, content: "CSS3"},
+                {id:2, content: "JavaScript"},
+                {id:3, content: "Python"},
+                {id:4, content: "Flask"},
+                {id:5, content: "Node.js"},
+                {id:6, content: "ExpressJS"},
+                {id:7, content: "ReactJS"},
+                {id:8, content: "ElectronJS"},
+                {id:9, content: "MySQL"},
+                {id:10, content: "MongoDB"},
+                {id:11, content: "Git & GitHub"}
             ],
             about_me:[
                 {id: "first-p-about",content: "Software Developer who loves to transform ideas into reality using code. I'm passionate about implementing different web technologies."},
@@ -45,10 +51,8 @@ class About extends React.Component{
                                                 this.state.skills.map(skill => {
                                                     return(
                                                         <React.Fragment key={skill.id}>
-                                                            <span>{skill.content}</span> <span className="pull-right">{skill.percentage}</span>
-                                                            <div className="progress">
-                                                                <div className="progress-bar" role="progressbar" style={{width: skill.percentage}} aria-valuenow={skill.value} aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
+                                                            <span className='badge badge-warning'>{skill.content}</span>
+                                                            { skill.id % 3 === 2 && <br /> }
                                                         </React.Fragment>
                                                     );
                                                 })
