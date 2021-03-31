@@ -36,7 +36,7 @@ import medlingos4 from "../img/medlingos-4.jpg";
 //import landing page
 import product from "../img/product.png";
 
-class Portfolio extends React.Component{
+class Projects extends React.Component{
 
     render(){
         return (
@@ -46,7 +46,7 @@ class Portfolio extends React.Component{
                 <div className="col-sm-12">
                   <div className="title-box text-center">
                     <h3 className="title-a">
-                      Portfolio
+                      Projects
                     </h3>
                     <p className="subtitle-a">
                       Check Out My Latest Projects.
@@ -226,4 +226,4 @@ class Portfolio extends React.Component{
     }
 }
 
-export default Portfolio;
+export default Projects;

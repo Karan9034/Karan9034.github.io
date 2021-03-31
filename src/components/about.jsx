@@ -6,19 +6,20 @@ class About extends React.Component{
         super();
         this.state = {
             skills:[
-                {id:"HTML5_skill", content: "HTML5",porcentage: "80%", value: "80"},
-                {id:"CSS3_skill", content: "CSS3",porcentage: "75%", value: "75"},
-                {id:"JavaScript_skill", content: "JavaScript",porcentage: "90%", value: "90"},
-                {id:"PHP_skill", content: "PHP",porcentage: "70%", value: "70"},
-                {id:"ReactJS_skill", content: "ReactJS",porcentage: "80%", value: "80"},
-                {id:"Python_skill", content: "Python",porcentage: "75%", value: "75"},
-                {id:"VanillaJS_skill", content: "VanillaJS",porcentage: "85%", value: "85"},
-                {id:"Wordpress_skill", content: "Wordpress",porcentage: "80%", value: "80"}
+                {id:"HTML5_skill", content: "HTML5",percentage: "80%", value: "80"},
+                {id:"CSS3_skill", content: "CSS3",percentage: "75%", value: "75"},
+                {id:"JavaScript_skill", content: "JavaScript",percentage: "90%", value: "90"},
+                {id:"Flask_skill", content: "Flask",percentage: "70%", value: "70"},
+                {id:"MERN_skill", content: "MERN",percentage: "80%", value: "80"},
+                {id:"Python_skill", content: "Python",percentage: "75%", value: "75"},
+                {id:"VanillaJS_skill", content: "VanillaJS",percentage: "85%", value: "85"},
+                {id:"ElectronJS_skill", content: "ElectronJS",percentage: "80%", value: "80"},
+                {id:"MySQL_skill", content: "MySQL",percentage: "85%", value: "85"}
             ],
             about_me:[
-                {id: "first-p-about",content: "Software Engineer who loves to transform ideas into reality using code. I am passionate about using Javascript and Animation Libraries to create awesome user experiences."},
-                {id: "second-p-about", content: "With over two years of experience developing web applications using the latest front-end and back-end technologies."},
-                {id: "third-p-about", content: "Motivated designer and developer with experience creating custom websites with ReactJs, JavaScript, HTML5, and CSS3. Strong collaboration skills and proven history of application development. Wordpress and MySQL."}
+                {id: "first-p-about",content: "Software Developer who loves to transform ideas into reality using code. I'm passionate about implementing different web technologies."},
+                {id: "second-p-about", content: "With one year of experience developing web and desktop applications using web technologies."},
+                {id: "third-p-about", content: "Motivated developer with experience in creating websites with HTML5, CSS3, JavaScript, MERN, and Flask. Strong hold on relational and non-relational databases. Great collaboration skills."}
             ]
         }
     }
@@ -38,24 +39,15 @@ class About extends React.Component{
                                                     <img src={myImage} className="img-fluid rounded b-shadow-a" alt=""/>
                                                 </div>
                                             </div>
-                                            {/* <div className="col-sm-6 col-md-7">
-                                                <div className="about-info">
-                                                <p><span class="title-s">Name: </span> <span>Frank Izquierdo</span></p>
-                                                <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
-                                                <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
-                                                <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
-                                                </div>
-                                            </div> */}
                                         </div>
                                         <div className="skill-mf">
-                                            {/* <p className="title-s">Skill</p> */}
                                             {
                                                 this.state.skills.map(skill => {
                                                     return(
                                                         <React.Fragment key={skill.id}>
-                                                            <span>{skill.content}</span> <span className="pull-right">{skill.porcentage}</span>
+                                                            <span>{skill.content}</span> <span className="pull-right">{skill.percentage}</span>
                                                             <div className="progress">
-                                                                <div className="progress-bar" role="progressbar" style={{width: skill.porcentage}} aria-valuenow={skill.value} aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div className="progress-bar" role="progressbar" style={{width: skill.percentage}} aria-valuenow={skill.value} aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
                                                         </React.Fragment>
                                                     );
