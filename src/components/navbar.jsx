@@ -80,6 +80,9 @@ const Navbar = () => {
                         <a className="nav-link js-scroll" href="#work">Work</a>
                     </li>
                     <li className="nav-item">
+                        <a className="nav-link js-scroll" href="https://drive.google.com/file/d/1-fNdqyJZybRARQxrGRLaljTvVJqhQtg4/view?usp=sharing">Work</a>
+                    </li>
+                    <li className="nav-item">
                         <a className="nav-link js-scroll" href="#contact">Contact</a>
                     </li>
                     </ul>
