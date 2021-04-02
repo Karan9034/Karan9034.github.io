@@ -18,13 +18,13 @@ import './libs/easing.js';
 import 'lightbox2/dist/js/lightbox.min.js';
 
 // Import Components
-import Navbar from './components/Navbar.jsx';
-import Intro from './components/Intro.jsx';
-import About from './components/About.jsx';
-import Projects from './components/Projects.jsx';
-import Contact from './components/Contact.jsx';
-import BackToTop from './components/BackToTop.jsx';
-import Preloader from './components/Preloader';
+import Navbar from './components/Navbar.js';
+import Intro from './components/Intro.js';
+import About from './components/About.js';
+// import Projects from './components/Projects.js';
+import Contact from './components/Contact.js';
+import BackToTop from './components/BackToTop.js';
+import Preloader from './components/Preloader.js';
 
 
 ReactDOM.render(
@@ -32,7 +32,7 @@ ReactDOM.render(
         <Navbar />
         <Intro />
         <About />
-        <Projects />
+        {/* <Projects /> */}
         <Contact />
         <BackToTop />
         <Preloader />

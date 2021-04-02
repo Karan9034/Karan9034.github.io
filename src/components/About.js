@@ -1,5 +1,5 @@
 import React from 'react';
-import myImage from "../img/myImage.jpg";
+import pic from "../img/profile.jpg";
 
 class About extends React.Component{
     constructor(){
@@ -42,7 +42,7 @@ class About extends React.Component{
                                         <div className="row">
                                             <div className="col-sm-6 col-md-5" style={{margin: "0 auto"}}>
                                                 <div className="about-img" style={{textAlign: "center"}}>
-                                                    <img src={myImage} className="img-fluid rounded b-shadow-a" alt=""/>
+                                                    <img src={pic} className="img-fluid rounded b-shadow-a" alt=""/>
                                                 </div>
                                             </div>
                                         </div>
