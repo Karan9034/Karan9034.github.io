@@ -77,7 +77,7 @@ const Navbar = () => {
                         <a className="nav-link js-scroll" href="#about">About</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link js-scroll" href="#work">Work</a>
+                        <a className="nav-link js-scroll" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1CwYH8ArL1QB8APDaGgCkbLv5GPERegqj/view?usp=sharing">Resume</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link js-scroll" href="#contact">Contact</a>

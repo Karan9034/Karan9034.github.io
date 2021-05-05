@@ -32,7 +32,7 @@ ReactDOM.render(
         <Navbar />
         <Intro />
         <About />
-        {/* <Projects /> */}
+        {/*<Projects />*/} 
         <Contact />
         <BackToTop />
         <Preloader />
